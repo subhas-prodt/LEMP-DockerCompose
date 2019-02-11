@@ -2,7 +2,7 @@
 
 ### Key Points
 
--> Replace the servername in nginx/site-availabl/default file with the docker ip. 
+-> Replace the servername in nginx/site-available/default file with the docker ip. 
 To find docker ip use the command ifconfig and look for the line inet addr: in the row docker* .
 
 Default file:
