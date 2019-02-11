@@ -7,9 +7,11 @@ To find docker ip use the command ifconfig and look for the line inet addr: in t
 
 Default file:
 
-server {
-    listen  80;
 
+    
+    server {
+    listen  80;
+    
     # this path MUST be exactly as docker-compose.fpm.volumes,
     # even if it doesn't exists in this dock.
     root /usr/share/nginx/html;
@@ -27,8 +29,10 @@ server {
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
-    }
-}
+        }
+     }
+ 
+
 
 -> Create a php file under public folder
 
